@@ -1,5 +1,6 @@
 header{
     display: flex;
+    z-index: 5;
     align-items: center;
     padding: var(--padding-container-y) var(--padding-container-x);
     width: 50%;
@@ -98,7 +99,7 @@ nav a.active{
     header .contact ul{
         position: fixed;
         flex-direction: column;
-        top: 15vh;
+        top: 30vh;
         left: 1rem;
     }
 
@@ -121,7 +122,7 @@ nav a.active{
         width: 100%;
         padding: 1rem;
         min-height: 15vh;
-        z-index: 15;
+        background: var(--background-color);
     }
 
     header .head{
