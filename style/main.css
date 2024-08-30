@@ -1,0 +1,119 @@
+*,::before,::after{
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+    transition: .3s ease-in-out;
+	font-family: "Wix Madefor Display", sans-serif;
+	color: var(--text-color-primary);
+
+}
+
+.mask{
+    z-index: 15;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(13,10,27,0.1) 0%, rgba(7,11,22,0.8) 48%, rgba(3,8,18,1) 100%);;
+    mask: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        transparent 40px,
+        black 150px
+    );
+    -webkit-mask: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        transparent 10px,
+        black 500px
+    );
+}
+
+body{
+	background-color: var(--background-color);
+}
+
+main{
+	padding-left: 50%;
+	padding-top: var(--padding-container-y);
+	padding-right: var(--padding-container-x);
+}
+
+section{
+	padding-top: 15vh;
+	min-height: 85vh;
+	display: flex;
+	align-items: center;
+}
+
+.container{
+	width: 100%;
+}
+
+.sub-container{
+	margin: var(--margin-sub-contenaier-y) var(--margin-sub-contenaier-x);
+}
+
+.sub-container:not(#about .sub-container){
+	padding: 1rem;
+	border-radius: 1rem;
+	opacity: 0.6;
+}
+
+.sub-container:not(#about .sub-container):hover{
+	box-shadow: 1px 1px 3px 1px rgba(63, 63, 63, 0.26);
+	transform: scale(1.01);
+	opacity: 1;
+}
+
+p{
+	color: var(--text-color-secondary);
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.tech{
+	width: 100%;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.tech span{
+    display: inline-block;
+    padding: 0.1rem 1rem;
+    border: solid 1px var(--text-color-secondary);
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    margin: 0.2rem 1rem;
+}
+
+@media(max-width: 1200px) {
+    
+} 
+
+@media(max-width: 992px) {
+    
+}
+
+@media(max-width: 768px) {
+    main{
+        padding: 3rem 3rem 3rem 4rem;
+    }
+
+	.sub-container:not(#about .sub-container){
+		opacity: 1;
+	}
+}
+
+@media(max-width: 600px) {
+	
+}

@@ -1,0 +1,14 @@
+:root{
+    --background-color : white;
+    
+
+    --text-color-primary : black;
+
+    --text-color-secondary : rgb(102, 102, 102);
+
+    --padding-container-x : 5rem;
+    --padding-container-y : 15vh;
+    --margin-sub-contenaier-y : 2rem;
+    --margin-sub-contenaier-x : 0;
+
+}

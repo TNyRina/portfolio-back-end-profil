@@ -1,0 +1,167 @@
+header{
+    display: flex;
+    align-items: center;
+    padding: var(--padding-container-y) var(--padding-container-x);
+    width: 50%;
+    position: fixed;
+    min-height: 85vh;
+}
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.img-content{
+    width: 8rem;
+    height: 8rem;
+    border: solid 3px var(--text-color-primary);
+    border-radius: 50%;
+    margin: 2rem 2rem 2rem 0;
+    background-image: url(../src/profil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    font-size: 1.5vw;
+}
+
+.title h3{
+    color: var(--text-color-secondary);
+    font-size: 1.5vw;
+}
+
+nav{
+    padding-left: var(--padding-container-x);
+    margin: 2rem 0;
+}
+
+header .contact{
+    padding-left: var(--padding-container-x);
+}
+
+header h4{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+header .contact ul{
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    justify-content: space-around;
+}
+
+nav a{
+    color: var(--text-color-secondary);
+}
+
+nav a.active{
+    color: var(--text-color-primary);
+}
+
+.contacts a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.contacts i{
+    font-size: 1.5rem;
+}
+
+.contacts a:hover{
+    box-shadow: 1px 1px 3px 1px rgba(63, 63, 63, 0.26);
+	transform: scale(1.01);
+	opacity: 1;
+}
+
+.contacts img{
+    width: 100%;
+    opacity: 0.7;
+}
+.contacts img:hover{
+    opacity: 1;
+}
+
+@media(max-width: 1195px){
+    header .head{
+        flex-direction: column;
+    }
+
+    header .contact ul{
+        position: fixed;
+        flex-direction: column;
+        top: 15vh;
+        left: 1rem;
+    }
+
+    header h4{
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    
+} 
+
+@media(max-width: 992px) {
+    
+}
+
+@media(max-width: 768px) {
+    header{
+        position: fixed;
+        width: 100%;
+        padding: 1rem;
+        min-height: 15vh;
+        z-index: 15;
+    }
+
+    header .head{
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .img-content{
+        width: 3rem;
+        height: 3rem;
+        border: solid 1px var(--text-color-primary);
+        margin: 0 1rem 0 0;
+    }
+
+    h1, .title h3{
+        font-size: 0.8rem;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .contacts a{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media(max-width: 600px) {
+    header .head{
+        padding-left: 3rem;
+        justify-content: start;
+    }
+
+    header .contact ul{
+        height: 100vh;
+        justify-content: center;
+    }
+}
+

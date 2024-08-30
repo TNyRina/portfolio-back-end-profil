@@ -1,0 +1,27 @@
+#project p{
+    padding-left: 1rem;
+}
+
+.link-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.link-projet{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px var(--text-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.link-projet:hover{
+    opacity: 1;
+}
+

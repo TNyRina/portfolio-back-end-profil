@@ -1,0 +1,8 @@
+#about p{
+    margin: 1rem 0;
+    color: var(--text-color-secondary);
+}
+
+#about span{
+    color: var(--text-color-primary);
+}
