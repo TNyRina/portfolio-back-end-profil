@@ -3,6 +3,7 @@
     color: var(--text-color-secondary);
 }
 
-#about span{
-    color: var(--text-color-primary);
+#about p span{
+    color: var(--text-color-simple);
 }
+
