@@ -1,4 +1,4 @@
-#skill ul{
+#skill ul, .programming-langage, .framework, .front-end, .outils{
     display: flex;
     align-items: start;
     justify-content: start;
