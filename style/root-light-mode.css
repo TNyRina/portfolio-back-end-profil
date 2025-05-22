@@ -2,9 +2,11 @@
     --background-color : white;
     
 
-    --text-color-primary : black;
+    --text-color-primary : rgb(238, 60, 60);
 
-    --text-color-secondary : rgb(102, 102, 102);
+    --text-color-secondary : rgb(49, 48, 48);
+
+    --text-color-simple : rgb(145, 144, 144);
 
     --padding-container-x : 5rem;
     --padding-container-y : 15vh;

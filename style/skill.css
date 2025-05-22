@@ -1,9 +1,49 @@
 #skill ul{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
+    flex-direction: column;
 }
 
 #skill li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
     margin: 0.2rem 1rem;
+    padding-right: 8rem;
+    color: var(--text-color-secondary);
+}
+
+#skill .evaluation{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#skill .evaluation div{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--text-color-secondary);
+}
+
+#skill .evaluation.c div:nth-child(1), #skill .evaluation.c div:nth-child(2){
+    background-color: var(--text-color-primary);
+}
+
+#skill .evaluation.java div:nth-child(1), #skill .evaluation.java div:nth-child(2), #skill .evaluation.java div:nth-child(3){
+    background-color: var(--text-color-primary);
+}
+
+#skill .evaluation.python div:nth-child(1), #skill .evaluation.python div:nth-child(2), #skill .evaluation.python div:nth-child(3){
+    background-color: var(--text-color-primary);
+}
+
+#skill .evaluation.php div:nth-child(1), #skill .evaluation.php div:nth-child(2), #skill .evaluation.php div:nth-child(3), #skill .evaluation.php div:nth-child(4){
+    background-color: var(--text-color-primary);
+}
+
+#skill .evaluation.typescript div:nth-child(1), #skill .evaluation.typescript div:nth-child(2), #skill .evaluation.typescript div:nth-child(3){
+    background-color: var(--text-color-primary);
 }
